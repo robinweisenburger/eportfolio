@@ -73,7 +73,7 @@ The basic MongoDB shell commands are listed in the cheat sheet which can be foun
 
 ## Test Data
 
-During the presentation I will use some Mock Data to show how MongoDB deals with it. This Mock Data can also be used by you. Therefore it can be downloaded here: 
+During the presentation I will use some Mock Data to show how MongoDB deals with it. This Mock Data can also be used by you. Therefore the test files (airports.json, flights.json, passengers.json) can be downloaded in this git repository. 
 
 ## Want to use MongoDB in your own project?
 
