@@ -1,0 +1,39 @@
+db.createCollection('passengers_validation', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['first_name', 'last_name', 'email', 'phone_number', 'passport_id', 'valid_ticket', 'negative_covid_tested'],
+      properties: {
+        first_name: {
+          bsonType: 'string',
+          description: 'must be a string!'
+        },
+        last_name: {
+          bsonType: 'string',
+          description: 'must be a string!'
+        },
+        email: {
+          bsonType: 'string',
+          description: 'must be a string!'
+        },
+        phone_number: {
+          bsonType: 'string',
+          description: 'must be a string!'
+        },
+        passport_id: {
+          bsonType: 'string',
+          description: 'must be a number!'
+        },
+        valid_ticket: {
+          bsonType: 'bool',
+          description: 'must be a true or false!'
+        },
+        negative_covid_tested: {
+          bsonType: 'bool',
+          description: 'must be a true or false!'
+            }
+        }
+      }
+
+  }
+});
